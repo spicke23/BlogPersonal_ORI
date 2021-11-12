@@ -1,35 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/mi_estilo.css">
-    <title>¿Quién es Angelo?</title>
+  <head>
+    <title>Blog Personal</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--link rel="stylesheet" href="./assets/css/estilo_boot.css"-->
 </head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="./index.html">¿Quién soy?</a></li>
-            <li><a href="./mi_pasion.html">¿Qué me gusta o apasiona?</a></li>
-            <li><a href="./historia.html">Algo de Historia</a></li>
-            <li><a href="./consejos.html">Sigueme para más consejos</a></li>
-        </ul>
-    </nav>
-    <h1>Algo de historia</h1>
-    <p>Bueno, que soy virgo, nacido el 08/SEP/XX</p>
-    <h2>Educación</h2>
-    <p>Estudié en una escuela básica y en un liceo municipal, luego entre a la Universidad donde
-        me titulé de Ingeniero en Computación e Informática. Todo en Arica.</p>
-    <h3>Actualidad</h3>
-    <p>Actualmente me encuentro en la ciudad de Santiago.</p>
+    <body>
+        <header>
+            <nav class="navbar navbar-light bg-light banner">
+                <div class="container container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img src="./assets/images/piramide.png" alt="Piramide" width="30" height="24" class="d-inline-block align-text-bottom">
+                    The_Angel_Co.
+                  </a>
+                  <ul class="nav nav-pills justify-content-end">
+                      <li class="nav-item">
+                          <a class="nav-link" href="./index.html">
+                              ¿Quién soy?
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="./pasion.html">
+                              Mis Gustos y Pasión
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="./historia.html">
+                              Sobre mí
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="./consejos.html">
+                              Más Consejos
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container container-fluid">
+                <h3>Algo de historia</h3>
+                <p>Bueno, que soy virgo, nacido el 08/SEP/XX</p>
+                <h3>Educación</h3>
+                <p>Estudié en una escuela básica y en un liceo municipal, luego entre a la Universidad donde
+                    me titulé de Ingeniero en Computación e Informática. Todo en Arica.</p>
+                <h3>Actualidad</h3>
+                <p>Actualmente me encuentro en la ciudad de Santiago.</p>
+                <h4>¿Quieres saber más de mí?... contactame</h4>
+                <div class="container container-fluid">
+                    <div class="row">
+                    <form>
+                        <div class="row mb-3">
+                          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                          <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail3">
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputEmail3" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                      </form>
+                      </div>
+                      </div>
+                </div>
+            </div>
+        </main>
     <footer>
-        <h3 class="tituloH3">Declaración de Principios</h3>
-            <ul>
-                <li class="pie">Amante de mi tierra</li>
-                <li class="pie">Me declaro ser más padre que hijo</li>
-                <li class="pie">Callado, pero observador</li>
-                <li class="pie">Aspecto tranquilo, pero no me dejo pasar a llevar</li>
-            </ul>
+        <div class="container container-fluid">
+            <div class="col col-lg-12 col-md-12 align-self-center">
+                <h3 class="tituloH3">Declaración de Principios</h3>
+                    <ul>
+                        <li class="pie">Amante de mi tierra</li>
+                        <li class="pie">Me declaro ser más padre que hijo</li>
+                        <li class="pie">Callado, pero observador</li>
+                        <li class="pie">Aspecto tranquilo, pero no me dejo pasar a llevar</li>
+                    </ul>
+            </div>
+        </div>
     </footer>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>

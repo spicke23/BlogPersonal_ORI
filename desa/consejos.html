@@ -1,43 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/mi_estilo.css">
-    <title>¿Quién es Angelo?</title>
+  <head>
+    <title>Blog Personal</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--link rel="stylesheet" href="./assets/css/estilo_boot.css"-->
 </head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="./index.html">¿Quién soy?</a></li>
-            <li><a href="./mi_pasion.html">¿Qué me gusta o apasiona?</a></li>
-            <li><a href="./historia.html">Algo de Historia</a></li>
-            <li><a href="./consejos.html">Sigueme para más consejos</a></li>
-        </ul>
-    </nav>
-    <h1>Consejos para una buena vida saludable</h1>
-        <h2>Muevete</h2>
-            <p>Realiza actividad física, no es necesario matarse en el gimnasio.</p>
-        <h2>Estilo de alimentación</h2>
-            <p>Una dieta no es morir de hambre, así como tu estilo de vida puede ser sedentario o activo,
-        la dieta se mide por tus comidas... hidratos de carbono o vegetales</p>
-            <h3>Hidratación</h3>
-                <p>Recuerda siempre beber agua</p>
-            <h3>Comidas</h3>
-                <p>¿Sabias que para tener un buen estilo de vida, solo debes dejar los alimentos procesados?</p>
-                <p>Así como el arroz, fideos, pan... reemplaza eso por una buena porción de ensaladas que te
-                satisfagan, como brocoli, tomate, coliflor, espinaca, etc.</p>
-                <h4>Come grasa saludable para no pasar hambre</h4>
-                    <p>Sí, como lo lees... come palta, salame, aceitunas, nueces, almendras, quesos</p>
-    <footer>
-        <h3 class="tituloH3">Declaración de Principios</h3>
-            <ul>
-                <li class="pie">Amante de mi tierra</li>
-                <li class="pie">Me declaro ser más padre que hijo</li>
-                <li class="pie">Callado, pero observador</li>
-                <li class="pie">Aspecto tranquilo, pero no me dejo pasar a llevar</li>
-            </ul>
-    </footer>
-</body>
+    <body>
+        <header>
+            <nav class="navbar navbar-light bg-light banner">
+                <div class="container container-fluid">
+                    <a class="navbar-brand" href="#">
+                    <img src="./assets/images/piramide.png" alt="Piramide" width="30" height="24" class="d-inline-block align-text-bottom">
+                    The_Angel_Co.
+                    </a>
+                    <ul class="nav nav-pills justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">
+                                ¿Quién soy?
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pasion.html">
+                                Mis Gustos y Pasión
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./historia.html">
+                                Sobre mí
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./consejos.html">
+                                Más Consejos
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <h4>Consejos para una buena vida saludable</h4>
+                        <h3>Muevete</h3>
+                            <p>Realiza actividad física, no es necesario matarse en el gimnasio.</p>
+                        <h3>Estilo de alimentación</h3>
+                            <p>Una dieta no es morir de hambre, así como tu estilo de vida puede ser sedentario o activo, la dieta se mide por tus comidas... hidratos de carbono o vegetales</p>
+                        <h3>Hidratación</h3>
+                            <p>Recuerda siempre beber agua</p>
+                        <h3>Comidas</h3>
+                            <p>¿Sabias que para tener un buen estilo de vida, solo debes dejar los alimentos procesados?</p>
+                            <p>Así como el arroz, fideos, pan... reemplaza eso por una buena porción de ensaladas que te satisfagan, como brocoli, tomate, coliflor, espinaca, etc.</p>
+                        <h3>Come grasa saludable para no pasar hambre</h3>
+                            <p>Sí, como lo lees... come palta, salame, aceitunas, nueces, almendras, quesos</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container container-fluid">
+                <div class="col col-lg-12 col-md-12 align-self-center">
+                    <h3 class="tituloH3">Declaración de Principios</h3>
+                        <ul>
+                            <li class="pie">Amante de mi tierra</li>
+                            <li class="pie">Me declaro ser más padre que hijo</li>
+                            <li class="pie">Callado, pero observador</li>
+                            <li class="pie">Aspecto tranquilo, pero no me dejo pasar a llevar</li>
+                        </ul>
+                </div>
+            </div>
+        </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
 </html>
