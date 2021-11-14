@@ -5,14 +5,23 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="./assets/js/efectos.js"></script>
+    <!-- script src="./assets/js/efectos.js"></script -->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--link rel="stylesheet" href="./assets/css/estilo_boot.css"-->
 </head>
     <body>
       <header>
-        <div onload="MuestraVentanaAlerta()"></div>
+        <script>
+            var cantidad = 1
+            function MuestraVentanaAlerta(){
+                if(cantidad){
+                    let mensaje = 'BienVenido a tu sitio de comida saludable'
+                    alert(mensaje)
+                }
+                cantidad = 0
+            }
+        </script>
         <nav class="navbar navbar-light bg-light banner">
             <div class="container container-fluid">
               <a class="navbar-brand" href="#">
