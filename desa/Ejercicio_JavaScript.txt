@@ -1,0 +1,18 @@
+Se realizan los siguientes pasos:
+
+1. se crea directorio js, dentro de assets
+2. se crea archivo javascript con el nombre 'efectos.js'
+3. se enlaza archivo efectos.js a index.html
+    3.1 funcion JavaScript no funciona
+4. se embebe codigo JavaScript en codigo de archivo index.html
+    4.1 funcion JavaScript no funciona
+
+Se busca informacion sobre problema, no error de programación y se obtiene lo siguiente:
+
+'Audit usage of navigator.userAgent, navigator.appVersion, and navigator.platform
+A page or script is accessing at least one of navigator.userAgent, navigator.appVersion, and navigator.platform. Starting in Chrome 101, the amount of information available in the User Agent string will be reduced.
+To fix this issue, replace the usage of navigator.userAgent, navigator.appVersion, and navigator.platform with feature detection, progressive enhancement, or migrate to navigator.userAgentData.
+Note that for performance reasons, only the first access to one of the properties is shown.
+1 source
+popper.min.js:1'
+
