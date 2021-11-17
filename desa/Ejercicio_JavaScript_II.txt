@@ -1,0 +1,36 @@
+En la sección "comidas" se crea un div que contiene un boton llamado "Cambia el color de esta sección", el cual al ser presionado cambia el color de fondo de esta sección.
+
+La función JavaScript recibe por nombre "generaNuevoColor", no recibe parametros, es llamada desde desde el "index.html".
+
+El código de la sección del boton es:
+
+<div class="col-lg-6 col-md-8" id="comidas">
+    <div class="color">
+        <h4>Comidas y recetas de @the_angel</h4>
+        <p>Con la gran practicidad de la vida moderna, muchos de nosotros solo podemos usar un microondas. Disfrutar una comida casera no es un lujo, ¡cualquiera puede hacerlo!</p>
+    </div>
+<button onclick="generarNuevoColor()">Cambia el color de esta sección</button>
+</div>
+
+
+---------
+
+
+La función JavaScript contiene el siguiente código:
+function generarNuevoColor(){
+	var simbolos, color;
+	simbolos = "0123456789ABCDEF";
+	color = "#";
+
+	for(var i = 0; i < 6; i++){
+		color = color + simbolos[Math.floor(Math.random() * 16)];
+	}
+
+    let division = document.getElementById('comidas')
+	division.style.background = color;
+}
+
+
+
+
+URL: https://spicke23.github.io/BlogPersonal/desa/
