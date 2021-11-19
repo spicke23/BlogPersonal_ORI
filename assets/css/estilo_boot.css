@@ -1,0 +1,49 @@
+h1,h2,h3,h4{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/*** CSS Gallery ***/
+#myslide {
+    width:705px;
+    overflow:hidden;
+    position: relative;
+    height:80px;
+    margin-bottom:20px;
+}
+
+#myslide .cover {
+    width:2820px;
+    position: absolute;
+    height:80px;
+}
+
+#myslide .mystuff {
+    width:705px;
+    float:left;
+    padding:20px 0;
+    font-size:15px;
+    font-style: italic;
+    color:#b0b0b0;
+    line-height:20px;
+    text-align:center;
+}
+
+.button1,
+.button2,
+.button3,
+.button4    {
+    background:#999;
+    padding:6px;
+    display:block;
+    float:left;
+    margin-right:5px;
+}
+
+.active { 
+    background:#111;
+    padding:6px;
+    display:block;
+    float:left;
+    outline:none;
+}
+.clear { clear: both; }

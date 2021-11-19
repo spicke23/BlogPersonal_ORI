@@ -17,3 +17,16 @@ function generarNuevoColor(){
     let division = document.getElementById('comidas')
 	division.style.background = color;
 }
+
+/*** Esto es jQuery ***/
+$(document).ready(function (){
+    $('#button a').click(function(){
+        var integer = $(this).attr('rel');
+        $('#myslide .cover').animate({left:-705*(parseInt(integer)-1)})
+        $('#button a').each(function(){
+            $(this).removeClass('active');
+            if($(this).hasClass('button'+integer)){
+                $(this).addClass('active')}
+        });
+    });
+});
