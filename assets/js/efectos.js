@@ -1,9 +1,9 @@
-function MuestraVentana() {
+/*function MuestraVentana() {
     var mensaje = 'BienVenido a tu sitio de comida saludable'
     alert(mensaje)
 }
 
-window.onload = MuestraVentana
+window.onload = MuestraVentana*/
 
 function generarNuevoColor(){
 	var simbolos, color;
@@ -30,3 +30,8 @@ $(document).ready(function (){
         });
     });
 });
+
+    /*** Esto es jQuery ***/
+    $(document).ready(function () {
+        $('#tablaUsuarios').DataTable();
+      });

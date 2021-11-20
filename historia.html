@@ -5,7 +5,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
- 
+
+    <script src="./assets/js/fomulario.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--link rel="stylesheet" href="./assets/css/estilo_boot.css"-->
@@ -19,59 +20,69 @@
                     The_Angel_Co.
                   </a>
                   <ul class="nav nav-pills justify-content-end">
-                      <li class="nav-item">
-                          <a class="nav-link" href="./index.html">
-                              ¿Quién soy?
-                          </a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="./pasion.html">
-                              Mis Gustos y Pasión
-                          </a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="./historia.html">
-                              Sobre mí
-                          </a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="./consejos.html">
-                              Más Consejos
-                          </a>
-                      </li>
-                  </ul>
-              </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./historia.html">
+                          Acerca de
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                        <a class="nav-link" href="./pasion.html">
+                            Gustos y Pasión
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./consejos.html">
+                            Algunos Consejos
+                        </a>
+                    </li>
+                </ul>
+                </div>
             </nav>
         </header>
         <main>
             <div class="container container-fluid">
                 <h3>Algo de historia</h3>
-                <p>Bueno, que soy virgo, nacido el 08/SEP/XX</p>
+                <p>El nacimiento de este blog se forja en mi memoria aproximadamente en 2018, cuando el <b>'Método Grez'</b> daba sus primeros pasos.</p>
+                <h3>¿Quién está detrás de este blog?</h3>
+                <p>Es normal que se pregunten <i>"¿quién está detrás de este blog?"</i>, o <i>"¿por qué y para qué desarrolló este blog?"</i><br>
+                Por tal motivo me presentaré ante Uds.</p>
+                <p>Mi nombre es <span style="color: darkblue">Angelo Valenzuela González</span></p>
+                <p>Bueno, soy virgo, nacido el 08/SEP/XX, en Arica.</p>
                 <h3>Educación</h3>
-                <p>Estudié en una escuela básica y en un liceo municipal, luego entre a la Universidad donde
-                    me titulé de Ingeniero en Computación e Informática. Todo en Arica.</p>
+                <p>Estudié en una escuela básica, luego en un liceo municipal por último entré a una Universidad Tradicional (La UTA), perteneciente al Consejo de Rectores de las Universidades Chilenas (CRUCH) donde me titulé de Ingeniero en Computación e Informática. Todo en Arica.</p>
                 <h3>Actualidad</h3>
                 <p>Actualmente me encuentro en la ciudad de Santiago.</p>
-                <h4>¿Quieres saber más de mí?... contactame</h4>
+                <h4>¿Quieres saber más de mí?... registrate y contactame</h4>
                 <div class="container container-fluid">
                     <div class="row">
-                    <form>
-                        <div class="row mb-3">
-                          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                          <div class="col-sm-10">
-                            <input type="email" class="form-control" id="inputEmail3">
-                          </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="inputEmail3" class="form-label">Mensaje</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                          </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                      </form>
-                      </div>
-                      </div>
+                        <form action="#">
+                            <div class="row mb-3">
+                                <div class="col-sm-10">
+                                    <label for="nombreUsuario">Nombre</label><input type="text" id="nombreUsuario" name="nombreUsuario" value="">
+                                </div>
+                                <div class="col-sm-10">
+                                    <label for="apellidoUsuario">Apellido</label><input type="text" id="apellidoUsuario" name="apellidoUsuario" value="">
+                                </div>
+                                <div class="col-sm-10">
+                                    <label for="correoUsuario">Correo</label><input type="email" id="correoUsuario" name="correoUsuario" value="">
+                                </div>
+                                <div class="col-sm-10">
+                                    <label for="clave1Usuario">Clave</label><input type="password" id="clave1Usuario" name="clave1Usuario" value="">
+                                </div>
+                                <div class="col-sm-10">
+                                    <label for="clave2Usuario">Repetir Clave</label><input type="password" id="clave2Usuario" name="clave2Usuario" value="">
+                                </div>
+                            </div>
+                            <!--button id="boton" value="submit" class="btn btn-primary">Enviar</button-->
+                            <input type="button" id="boton" class="btn btn-primary" value="Enviar" onclick="Valida()">
+                        </form>
+                    </div>
                 </div>
-            </div>
         </main>
     <footer>
         <div class="container container-fluid">
