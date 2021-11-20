@@ -1,0 +1,6 @@
+Proyecto Individual: jQuery
+Nombre: Angelo Valenzuela
+URL: https://github.com/spicke23/BlogPersonal
+Archivo Modificado con jQuery:
+- consejos.html
+- 
