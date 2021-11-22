@@ -32,6 +32,6 @@ $(document).ready(function (){
 });
 
     /*** Esto es jQuery ***/
-    $(document).ready(function () {
-        $('#tablaUsuarios').DataTable();
-      });
+$(document).ready(function(){
+    $('#tablaUsuarios').DataTable();
+});
