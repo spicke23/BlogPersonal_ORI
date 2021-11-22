@@ -46,7 +46,7 @@ function Valida(){
     let largoClave2 = clave2.length
     let mensaje1, mensaje2, mensaje3, mensaje4, mensaje5
 
-    if((nombre == nill) || (largoNombre < 1)){
+    if((nombre == null) || (largoNombre < 1)){
         mensaje1 = 'Campo Nombre'
     }
     if((apellido == "") || (largoApellido < 1)){
@@ -61,7 +61,7 @@ function Valida(){
     if((clave2 == "") || (largoClave2 < 1)){
         mensaje5 = 'Campo Repetir Clave'
     }
-    let mensaje = 'Falta Completar:'+'\n'+mensaje1+'\n'+mensaje2+'\n'+mensaje3+'\n'+mensaje4+'\n'+mensaje5
+    mensaje = 'Falta Completar:'+'\n'+mensaje1+'\n'+mensaje2+'\n'+mensaje3+'\n'+mensaje4+'\n'+mensaje5
     alert(mensaje)
 
     // Validamos Claves

@@ -1,9 +1,19 @@
-/*function MuestraVentana() {
-    var mensaje = 'BienVenido a tu sitio de comida saludable'
-    alert(mensaje)
+function filename(){
+    var rutaAbsoluta = self.location.href;   
+    var posicionUltimaBarra = rutaAbsoluta.lastIndexOf("/");
+    var rutaRelativa = rutaAbsoluta.substring( posicionUltimaBarra + "/".length , rutaAbsoluta.length );
+    return rutaRelativa;  
 }
 
-window.onload = MuestraVentana*/
+function MuestraVentana() {
+    var mensaje = 'BienVenido a tu sitio de comida saludable'
+    var nombreArchivo = filename()
+    if(nombreArchivo == 'index.html'){
+        alert(mensaje)
+    }
+}
+
+window.onload = MuestraVentana
 
 function generarNuevoColor(){
 	var simbolos, color;
@@ -17,19 +27,6 @@ function generarNuevoColor(){
     let division = document.getElementById('comidas')
 	division.style.background = color;
 }
-
-/*** Esto es jQuery ***/
-$(document).ready(function (){
-    $('#button a').click(function(){
-        var integer = $(this).attr('rel');
-        $('#myslide .cover').animate({left:-705*(parseInt(integer)-1)})
-        $('#button a').each(function(){
-            $(this).removeClass('active');
-            if($(this).hasClass('button'+integer)){
-                $(this).addClass('active')}
-        });
-    });
-});
 
     /*** Esto es jQuery ***/
 $(document).ready(function(){
