@@ -1,0 +1,10 @@
+{% extends 'usuarios/layout.html' %}
+{% block content %}
+
+<form action="/procesarRegistroForm" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button>Registrar</button>
+</form>
+{{respuesta}}
+{% endblock %}

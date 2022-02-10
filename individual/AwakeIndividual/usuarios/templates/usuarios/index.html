@@ -1,0 +1,7 @@
+{% extends 'usuarios/layout.html' %}
+{% block content %}
+    <h1>Hola Mundo</h1>
+    <a href="/recibir?dato=10">Enviar valor 10</a>
+    <p>aquí llega el numero enviado: {{ numero }}</p>
+    <p>Resultado de la suma: {{ numero2 }}</p>
+{% endblock %}
