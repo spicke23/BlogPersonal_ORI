@@ -1,0 +1,11 @@
+{% extends 'usuarios/layout.html' %}
+{% block content %}
+
+<form action="/procesarRegistroForm" method="POST">
+    {% csrf_token %}
+    {% load crispy_forms_tags%}
+    {{form|crispy}}
+    <button>Registrar</button>
+</form>
+{{respuesta}}
+{% endblock %}

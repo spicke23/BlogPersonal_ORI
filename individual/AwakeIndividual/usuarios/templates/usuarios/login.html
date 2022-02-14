@@ -1,0 +1,9 @@
+{% extends 'usuarios/layout.html' %}
+{% block content %}
+<form action="/login" method="POST">
+    {% csrf_token %}
+    {% load crispy_forms_tags%}
+    {{form|crispy}}
+    <button>Login</button>
+</form>
+{% endblock %}
